@@ -52,15 +52,15 @@
   }
 
   .p {
-    @apply text-sm md: text-base;
+    @apply text-sm md:text-base;
   }
 
   .paddingX {
-    @apply px-1 sm: px-2 lg:px-3;
+    @apply px-1 sm:px-2 lg:px-3;
   }
 
   .paddingY {
-    @apply py-1 sm: py-2 lg:py-3;
+    @apply py-1 sm:py-2 lg:py-3;
   }
 
   .auth-page {
