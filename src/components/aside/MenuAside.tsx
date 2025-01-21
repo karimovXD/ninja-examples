@@ -1,14 +1,14 @@
-import { Menu } from "antd";
+import { Menu, MenuProps } from "antd";
 import React from "react";
 import { DollarOutlined, GlobalOutlined } from "@ant-design/icons";
 import Link from "next/link";
 import { DASHBOARD_PAGES } from "@/config/pages-url.config";
 import { usePathname } from "next/navigation";
 
-const items: MenuItem[] = [
+const items: MenuProps["items"] = [
   {
     key: "1",
-    icon: React.createElement(DollarOutlined),
+    icon: <DollarOutlined />,
     label: "Finance",
     children: [
       {
@@ -35,7 +35,7 @@ const items: MenuItem[] = [
   },
   {
     key: "2",
-    icon: React.createElement(GlobalOutlined),
+    icon: <GlobalOutlined />,
     label: "Internet",
     children: [
       {
