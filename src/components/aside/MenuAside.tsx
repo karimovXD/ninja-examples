@@ -3,11 +3,12 @@ import React from "react";
 import { DollarOutlined, GlobalOutlined } from "@ant-design/icons";
 import Link from "next/link";
 import { DASHBOARD_PAGES } from "@/config/pages-url.config";
+import { usePathname } from "next/navigation";
 
 const items: MenuItem[] = [
   {
     key: "1",
-    icon: <DollarOutlined />,
+    icon: React.createElement(DollarOutlined),
     label: "Finance",
     children: [
       {
@@ -34,7 +35,7 @@ const items: MenuItem[] = [
   },
   {
     key: "2",
-    icon: <GlobalOutlined />,
+    icon: React.createElement(GlobalOutlined),
     label: "Internet",
     children: [
       {
@@ -65,10 +66,13 @@ const items: MenuItem[] = [
   },
 ];
 const MenuAside = () => {
+  const pathname = usePathname();
+
   return (
     <Menu
       mode="inline"
       theme="light"
+      selectedKeys={[pathname]}
       items={items}
       style={{ width: "250px", border: "none" }}
     />

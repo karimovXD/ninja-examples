@@ -1,8 +1,8 @@
 "use client";
 import "@/app/globals.scss";
-import { SearchOutlined } from "@ant-design/icons";
-import { Layout, Breadcrumb, theme, Button } from "antd";
+import { Layout, theme, Button } from "antd";
 import MainAside from "@/components/aside/MainAside";
+import AppBreadcrumb from "@/components/breadcrumbs/AppBreadcrumbs";
 const { Header, Content } = Layout;
 
 const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
@@ -29,10 +29,7 @@ const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
       <Layout>
         <MainAside colorBgContainer={colorBgContainer} />
         <Layout>
-          <Breadcrumb
-            items={[{ title: "Home" }, { title: "List" }, { title: "Detail" }]}
-            style={{ fontSize: 17, padding: "14px 14px 0 14px" }}
-          />
+          <AppBreadcrumb />
           <Content
             style={{
               padding: 14,
