@@ -16,7 +16,7 @@ const MainAside: React.FC<{ colorBgContainer: string }> = ({
         overflow: "auto",
         minHeight: "100%",
         width: "auto",
-        scrollbarWidth: "thin", 
+        scrollbarWidth: "none", 
         scrollbarGutter: "stable",
         userSelect: "none",
         border: "none",

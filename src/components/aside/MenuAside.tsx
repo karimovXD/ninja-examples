@@ -1,4 +1,5 @@
-import { Menu, MenuProps } from "antd";
+import { Menu } from "antd";
+import type { MenuProps } from "antd";
 import React from "react";
 import { DollarOutlined, GlobalOutlined } from "@ant-design/icons";
 import Link from "next/link";
